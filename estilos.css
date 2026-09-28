@@ -1,4 +1,5 @@
- {
+/* Reset básico e box-sizing */
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -9,10 +10,18 @@ body {
   line-height: 1.6;
   background-color: #f4f4f4;
   color: #333;
+
+  /* Para exercício 5: centralizar um cartão na tela */
+  /* Descomente para testar
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  */
 }
 
 .cabecalho {
-  background-color: #2c3e50;
+  background-color: #8e44ad; /* cor trocada */
   color: white;
   text-align: center;
   padding: 30px;
@@ -20,7 +29,7 @@ body {
 
 .conteudo {
   max-width: 800px;
-  margin: 20px auto;
+  margin: 20px auto; /* centraliza a caixa */
   padding: 20px;
   background-color: white;
   border-radius: 8px;
@@ -39,10 +48,26 @@ body {
 }
 
 .cartao {
-  flex: 1;
-  background-color: #3498db;
+  flex: 1; /* cada cartão ocupa largura igual */
+  background-color: #e74c3c; /* cor trocada */
   color: white;
   padding: 20px;
   text-align: center;
   border-radius: 6px;
+}
+
+/* Exercício 3: classe para botões */
+.botao {
+  display: inline-block; /* para padding funcionar corretamente */
+  background-color: #27ae60;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.botao:hover {
+  background-color: #2ecc71;
 }
